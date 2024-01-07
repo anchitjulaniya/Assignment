@@ -1,0 +1,72 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.fullpage {
+    background-image: url("netflix_homepage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  /* filter:brightness(30%); */
+  /* background-color: rgba(0,0,0,0.700); */
+  /* position: absolute;
+  z-index: 0; */
+}
+.hero {
+    background-color: rgba(0, 0, 0, 0.644);
+    height: 100vh;
+    /* z-index: 1; */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+}
+.logo {
+  background-image: url("Netflix_Logo_RGB.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 200px;
+  margin-left: 20px;
+  margin-top: 20px;
+  
+}
+.rightnavbar {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.signin,
+.register {
+  height: 25px;
+  width: 80px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10%;
+  color: white;
+  font-weight: 1000;
+}
+.content {
+  margin-top: 200px;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.content > h1 {
+  font-size: 70px;
+  letter-spacing: 3px;
+}
+.content > p {
+  font-size: 40px;
+  line-height: 70px;
+}
