@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container1{
+    background: linear-gradient(to right, rgb(2,1,1),rgb(222,73,58));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    color: white;
+    font-weight: 700;
+}
+.container2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 7vh;
+    gap: 2%;
+    position: sticky;
+    top: 0;
+
+    z-index: 2;
+}
+input{
+    width: 30%;
+    height: 50%;
+
+}
+.container3{
+    height: 45vh;
+    color: white;
+    background-image: url("bg-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container3-1{
+    height: 50%;
+    width: 54%;
+    padding: 20px;
+    position: relative;
+    font-size: 19.2px;
+    top: 15%;
+    left: 15%;
+    background-color: rgba(0, 0, 0, 0.296);
+}
+.container4{
+    height: 32vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(229,229,229);
+}
+.container4-1{
+    background-color: rgba(0, 0, 0, 0.361);
+    height: 85%;
+    width: 90%;
+    padding: 10px;
+
+}
+.container4-1-1{
+    display: flex;
+    gap: 4px;
+}
+.product{
+    height:150px ;
+    width:120px ;
+    border: 1.5px solid rgb(96,96,96);
+    background-color: rgba(0, 0, 0, 0.373);
+    color: white;
+}
+.img{
+    height:80%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.img1{
+    background-image: url("jordan7.jpeg");    
+}
+.img2{
+    background-image: url("jordan3.jpeg");    
+}
+.img3{
+    background-image: url("jordan1.jpeg");    
+}
+.container5{
+    height: 95vh;
+    background:linear-gradient(to right,rgb(66,66,66),rgb(1,1,1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container5-1{
+    height: 80%;
+    width: 85%;
+    background:linear-gradient(to right, rgb(2,1,1),rgb(227,75,59));
+    box-shadow: 0 0 10px rgb(139, 139, 139);
+    display: flex;
+}
+.container5-1-1{
+    padding: 50px;
+    font-size: 1.23em;
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.footer_img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 8px 8px 10px white;
+    position: absolute;
+    top:100%;
+    right:10%;
+}
+.footer_img:hover{
+    height: 500px;
+    width: 500px;
+}
