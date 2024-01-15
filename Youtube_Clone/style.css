@@ -18,6 +18,10 @@ body{
     padding:0 25px;
     width: 100%;
 }
+.search{
+    display: flex;
+    gap: 0;
+}
 .nav_left{
     display:flex;
     align-items: center;
