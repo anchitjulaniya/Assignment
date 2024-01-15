@@ -5,7 +5,6 @@
 }
 body{
     height: fit-content;
-    border:2px solid chartreuse;
 }
 .nav{
     background-color: white;
@@ -58,10 +57,12 @@ i:hover{
 #left_nav{
     width: 15%;
     height: 90vh;
-    background-color: brown;
     position: fixed;
     top: 10%;
     left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
 #main{
@@ -102,7 +103,6 @@ i:hover{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    border:2px solid red;
 }
 .box{
     height: 40vh;
@@ -131,4 +131,26 @@ img{
 }
 .extra{
     color: #656060;
+}
+#left_nav > div{
+    /* padding: 0 15px 0 15px; */
+    font-size: 13px;
+}
+#left_nav > div:hover{
+    border-radius: 10px;
+    background-color: rgb(240,240,240);
+}
+.item{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 6.5%;
+    color: black;
+}
+span{
+    height: 100%;
+    width: 70px;
+    padding: 10px;
+
 }
