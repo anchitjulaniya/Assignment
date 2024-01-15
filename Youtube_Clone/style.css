@@ -132,25 +132,19 @@ img{
 .extra{
     color: #656060;
 }
-#left_nav > div{
-    /* padding: 0 15px 0 15px; */
+.item{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 6.5%;
+    color: black;
     font-size: 13px;
 }
-#left_nav > div:hover{
+.item:hover{
     border-radius: 10px;
     background-color: rgb(240,240,240);
 }
-.item{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 80%;
-    height: 6.5%;
-    color: black;
-}
 span{
-    height: 100%;
-    width: 70px;
-    padding: 10px;
-
+    padding:10px;
 }
+
