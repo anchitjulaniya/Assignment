@@ -76,8 +76,8 @@ i:hover{
     width: 85%;
     height: 90vh;
     background-color: white;
-    margin-left: 15%;
-    margin-top: 10%;
+    margin-left: 15.5%;
+    margin-top: 8.5%;
 }
 .nav2{
     display: flex;
@@ -103,11 +103,16 @@ i:hover{
     cursor: pointer;
 }
 .content{
-    margin: 15px;
+    margin: 0 15px 15px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}.content1{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
+
 .box{
     height: 40vh;
     width: 32%;
