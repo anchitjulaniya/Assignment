@@ -54,6 +54,14 @@ i:hover{
     border-radius: 50% ;
     
 }
+.profile_anchit{
+    border-radius:50% ;
+}
+.profile_anchit:hover{
+    cursor: pointer;
+    
+}
+
 #id{
     display: flex;
     flex-direction: row;
