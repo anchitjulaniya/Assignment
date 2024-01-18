@@ -6,7 +6,6 @@
     font-family:sans-serif;
     font-weight: 500;
     line-height: 1.5;
-    /* background-color: transparent; */
 }
 body{
     background-color: rgb(236,242,248);
@@ -16,29 +15,36 @@ body{
     min-height: 100vh;
 }
 .container{
-    /* margin: 10vh 12%; */
     height: 80vh;
     width: 76%;
     background-color: rgb(236,242,248);
     display: grid;
-    
     grid-template-areas: 
     "one one two three"
     "four five five three";
     gap: 24px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
 }
 .box{
-    /* padding:32px; */
+    padding:32px;
     border-radius: 10px;
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
+    gap:15px;
 }
-
+span > p{
+    opacity: 0.7;
+}
 .one{
     grid-area: one;
     background-color: rgb(117,65,200);
     color: white;
+    background-image: url("quotes.svg");
+    background-position:b;
+    background-repeat: no-repeat;
+    background-position-x: 90%;
 }
 .two{
     grid-area: two;
@@ -51,9 +57,7 @@ body{
     background-color: rgb(255,255,255);
     color: black;
     border-radius: 10px;
-    font-size: 13px;
-    /* padding:0 38px; */
-    /* max-width: 25%; */
+    font-size: 13px;   
 }
 .four{
     grid-area: four;
@@ -82,4 +86,7 @@ img{
     line-height: 1.2;
     width: fit-content;
     font-weight: 500;
+}
+.footer{
+    opacity: 0.7;
 }
