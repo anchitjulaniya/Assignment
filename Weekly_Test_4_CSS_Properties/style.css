@@ -276,6 +276,22 @@ textarea{
     font-size: 1rem;
     margin-top: 20px;
 }
-   
+.send{
+    background-color: black;
+     color: white;
+     padding: 15px;
+     border-radius: 8px;
+     margin-top: 15px;
+     font-size: 1rem;
+     height: 45px;
+     width: 163px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.send:hover{
+    background-color: rgb(80, 80, 80);
+    cursor: pointer;
+}
 
 /* page4 end */
