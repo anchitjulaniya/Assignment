@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     letter-spacing: 0.5px;
+    font-family: sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -46,6 +47,7 @@ html{
 }
 .button > a:hover{
     color: silver;
+    /* backdrop-filter: blur(10px); */
 }
 /* nav css end */
 /* ------------------------------- */
@@ -80,7 +82,7 @@ html{
     text-shadow:5px 5px 5px rgba(0, 0, 0, 0.223);
 }
 .page1-heading{
-    font-size: 4.5em;
+    font-size: 4em;
     font-family: sans-serif;
     text-shadow:5px 5px 5px rgba(0, 0, 0, 0.223);
      font-weight: 750;
@@ -92,13 +94,15 @@ html{
     padding: 0.8em 1.8em;
     border-radius: 0.2em;
     border:2px solid white ;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in;
+    transition: all 0.3s ease-out;
 }
 .page1-button:hover{
     border:2px solid white;
     color: white;
     background-color: transparent;
     cursor: pointer;
+    backdrop-filter: blur(2px);
 }
 .page1 > p{
     font-size: 1.25em;
