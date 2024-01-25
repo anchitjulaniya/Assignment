@@ -64,28 +64,21 @@ img{
     font-size: 1.2em;
 }
 .content{
-    width: 80%;
+    width: 100%;
     padding: 1em;
     color: white;
-    display: grid;
-    /* grid-auto-flow: column; */
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);   
+    columns: 3;  
     letter-spacing: 0.1em;
     text-align: justify; 
-    gap:1em;
+    /* gap:1em; */
     font-size: 1.2em;
-    
-    
-
+    margin: 0 auto;
+    line-height: 1.5em;
 }
-.content p:nth-child(3){
-    grid-column: 2;
-}
-span{
+.any::first-letter{
     font-size: 5em;
     color: red;
-
+    float:left;
 }
 .quote{
     color: #00BEEF;
@@ -98,4 +91,56 @@ span{
 hr{
     width: 100%;
     height: 1px;
+}
+.content1{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr;
+    gap: 28px;
+    margin: 0px auto;
+    width: 95%;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    text-align: justify; 
+}
+.column0{
+    grid-row: 1/2 ;
+    grid-column: 1/2;
+}
+.column1{
+    grid-row: 1/2 ;
+    grid-column: 2/3;
+    margin: 0 auto;
+}
+.inner{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+}
+.inner > img{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    height: 350px;
+    object-fit: cover;
+    margin: auto 0;
+}
+.inner > p{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    margin: 25px 0; 
+}
+.quote1{
+    color: #00BEEF;
+    font-size: 1.8em;
+    text-align: center;
+    padding: 1em 0;
+    border-top: 2px solid rgb(80,84,88);
+    border-bottom: 2px solid rgb(80,84,88);
+}
+.quote2{
+    color: #00BEEF;
+    font-size: 1.5em;
 }
