@@ -4,57 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body{
-            height: 100vh;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: black;
-        }
-        
-        img{
-            width: 800px;
-            height: 533px ;
-            aspect-ratio: 800/533;
-        }
-        @media screen and (max-width:810px) {
-            body{
-            height: 100vh;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            background-color: black;
-            }
-            
-            img{
-            width: 600px;
-            height: 400px;
-            /* aspect-ratio: 800/533; */
-            }
-        }    
-        @media screen and (max-width:610px) {
-            img{
-            width: 400px;
-            height: 267px;
-            /* aspect-ratio: 800/533; */
-        }
-        @media screen and (max-width:410px) {
-            img{
-            width: 200px;
-            height: 133.25px;
-            /* aspect-ratio: 800/533; */
-        }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
-        <img src="image.webp" alt="this is image">  
+    <div class="container">
+            <div class="left">
+                <img src="Coffe_image.png">
+            </div>
+            <div class="right">
+                <h1>Certified Coffee Courses</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates libero veniam voluptate omnis nulla soluta perferendis non, at commodi nesciunt maiores aliquid aspernatur, natus corrupti. Mollitia atque beatae totam ipsa.</p>
+                <p>Image from span
+                    Freepik</p>
+                <p class="button">LEARN MORE</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
