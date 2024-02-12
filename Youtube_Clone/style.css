@@ -10,6 +10,7 @@ body{
     background-color: white;
     color: black;
     height: 10vh;
+    /* height: 75px; */
     position: fixed;
     top:0;
     z-index: 10;
@@ -85,12 +86,13 @@ i:hover{
     height: 90vh;
     background-color: white;
     margin-left: 15.5%;
-    margin-top: 8.5%;
+    margin-top: 120px;
 }
 .nav2{
     display: flex;
     justify-content: space-evenly;
     height: 6vh;
+    /* height: 45px; */
     position: fixed;
     top: 10%;
     z-index: 10;
@@ -115,7 +117,8 @@ i:hover{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-}.content1{
+}
+.content1{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -123,9 +126,13 @@ i:hover{
 
 .box{
     height: 40vh;
+    min-width: 250px;
     width: 32%;
     background-color: white;
     padding: 3px;
+    flex-grow: 1;
+    
+    
 }
 .video_name{
     display: flex;
@@ -180,3 +187,6 @@ a{
     text-decoration: none;
     color: black;
 }
+/* span{
+  height: fit-content;
+} */

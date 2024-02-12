@@ -1,625 +1,985 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>YouTube</title>
-    
-    <link rel="stylesheet" href="style.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <link rel="icon" href="https://www.logo.wine/a/logo/YouTube/YouTube-Icon-Full-Color-Logo.wine.svg" type="svg">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-</head>
-<body>
+    <link
+      rel="icon"
+      href="https://www.logo.wine/a/logo/YouTube/YouTube-Icon-Full-Color-Logo.wine.svg"
+      type="svg"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
     <div class="nav">
-        <div class="nav_left">
-            <i class="fa-solid fa-bars"></i>
-            <a href="https://anchitjulaniya.github.io/Assignment/Youtube_Clone/index.html"><img src="youtube_logo.png" alt="logo" height="50px" width="100px"></a>
-            <p style="font-family: sans-serif;font-size: 15px;"><sup>IN</sup></p>
+      <div class="nav_left">
+        <i class="fa-solid fa-bars"></i>
+        <a
+          href="https://anchitjulaniya.github.io/Assignment/Youtube_Clone/index.html"
+          ><img src="youtube_logo.png" alt="logo" height="50px" width="100px"
+        /></a>
+        <p style="font-family: sans-serif; font-size: 15px"><sup>IN</sup></p>
+      </div>
+      <div class="nav_center">
+        <div class="search">
+          <input type="text" placeholder="Search" />
+          <i
+            style="
+              background-color: rgb(240, 240, 240);
+              padding: 12px;
+              border-radius: 0 30px 30px 0;
+            "
+            class="fa-solid fa-magnifying-glass"
+          ></i>
         </div>
-        <div class="nav_center">
-            <div class="search">
-                <input type="text" placeholder="Search">
-                <i style="background-color: rgb(240,240,240);padding:12px; border-radius: 0 30px 30px 0;" class="fa-solid fa-magnifying-glass"></i>
-            </div>    
-                <i style="border-radius: 50%; padding:15px; background-color: rgb(240,240,240);" class="fa-solid fa-microphone"></i>
-            
-        </div>
-        <div class="nav_right">
-            <i class="fa-solid fa-video"></i>
-            <i class="fa-solid fa-bell"></i>
-            <img class="profile_anchit" src="anchit_image.png" alt="profile_image" height="50px" width="60px">
-        </div>                           
+        <i
+          style="
+            border-radius: 50%;
+            padding: 15px;
+            background-color: rgb(240, 240, 240);
+          "
+          class="fa-solid fa-microphone"
+        ></i>
+      </div>
+      <div class="nav_right">
+        <i class="fa-solid fa-video"></i>
+        <i class="fa-solid fa-bell"></i>
+        <img
+          class="profile_anchit"
+          src="anchit_image.png"
+          alt="profile_image"
+          height="50px"
+          width="60px"
+        />
+      </div>
     </div>
 
     <div id="main">
-            <div id="left_nav">
-                <div class="item" style="border-radius: 10px;
-                background-color: rgb(240,240,240);">
-                    <span class="material-symbols-outlined">
-                        home
-                        </span>
-                    <p>Home</p>
-                </div>
-                <div class="item">
-                    <img src="Youtube_shorts.png" style="height: 20px;width: 20px; margin-left: 22px;">
-                    <p style="margin-left: 10px;">Shorts</p>
-                </div>
-                <div class="item">
-                    <span class="material-symbols-outlined">
-                        subscriptions
-                        </span>
-                    <p>Subscriptions</p>
-                </div>
-                <hr style="width: 90%; color: rgb(118, 117, 117); margin: 10px 0;">
-                <div class="item"><span class="material-symbols-outlined">video_library</span>
-                <p>Library</p>
-                </div>
-                <div class="item">
-                    <span class="material-symbols-outlined">
-                        history
-                        </span>
-                    <p>History</p>
-                </div>
-                <div class="item">
-                    <span class="material-symbols-outlined">
-                        slideshow
-                        </span>
-                    <p>Your videos</p>
-                </div>
-                <div class="item">
-                    <span class="material-symbols-outlined">
-                        pace
-                        </span>
-                    <p>Watch Later</p>
-                </div>
-                <div class="item">
-                    <span class="material-symbols-outlined">
-                        thumb_up
-                        </span>
-                    <p>Liked videos</p>
-                </div>
-                <div class="item">
-                    <span class="material-symbols-outlined">
-                        download
-                        </span>
-                    <p>Downloads</p>
-                </div>
-                
-                <hr style="width: 90%; color: rgb(118, 117, 117); margin: 10px 0;">
+      <div id="left_nav">
+        <div
+          class="item"
+          style="border-radius: 10px; background-color: rgb(240, 240, 240)"
+        >
+          <span class="material-symbols-outlined"> home </span>
+          <p>Home</p>
+        </div>
+        <div class="item">
+          <img
+            src="Youtube_shorts.png"
+            style="height: 20px; width: 20px; margin-left: 22px"
+          />
+          <p style="margin-left: 10px">Shorts</p>
+        </div>
+        <div class="item">
+          <span class="material-symbols-outlined"> subscriptions </span>
+          <p>Subscriptions</p>
+        </div>
+        <hr style="width: 90%; color: rgb(118, 117, 117); margin: 10px 0" />
+        <div class="item">
+          <span class="material-symbols-outlined">video_library</span>
+          <p>Library</p>
+        </div>
+        <div class="item">
+          <span class="material-symbols-outlined"> history </span>
+          <p>History</p>
+        </div>
+        <div class="item">
+          <span class="material-symbols-outlined"> slideshow </span>
+          <p>Your videos</p>
+        </div>
+        <div class="item">
+          <span class="material-symbols-outlined"> pace </span>
+          <p>Watch Later</p>
+        </div>
+        <div class="item">
+          <span class="material-symbols-outlined"> thumb_up </span>
+          <p>Liked videos</p>
+        </div>
+        <div class="item">
+          <span class="material-symbols-outlined"> download </span>
+          <p>Downloads</p>
+        </div>
 
+        <hr style="width: 90%; color: rgb(118, 117, 117); margin: 10px 0" />
 
-                
-                <div class="item-heading"><p>Subscription</p></div>
-                <div class="item"><img class="left_nav_logo" src="geekster_logo.jpg"><p>Geekster</p></div>
-                <div class="item"><img class="left_nav_logo"  src="india_tx_logo.jpg"><p>India Tv</p></div>
-                <div class="item"><img class="left_nav_logo"  src="geekster_logo.jpg"><p>CA Rahul Malodia</p></div>
-                <div class="item"><img class="left_nav_logo"  src="rdkstudio_logo.jpg"><p>Rk Dance studio</p></div>
-                <div class="item"><img class="left_nav_logo"  src="T-Series-logo.png"><p>T-Series</p></div>
-                <div class="item"><img class="left_nav_logo"  src="set_india_logo.jpg"><p>SET-India</p></div>
+        <div class="item-heading"><p>Subscription</p></div>
+        <div class="item">
+          <img class="left_nav_logo" src="geekster_logo.jpg" />
+          <p>Geekster</p>
+        </div>
+        <div class="item">
+          <img class="left_nav_logo" src="india_tx_logo.jpg" />
+          <p>India Tv</p>
+        </div>
+        <div class="item">
+          <img class="left_nav_logo" src="geekster_logo.jpg" />
+          <p>CA Rahul Malodia</p>
+        </div>
+        <div class="item">
+          <img class="left_nav_logo" src="rdkstudio_logo.jpg" />
+          <p>Rk Dance studio</p>
+        </div>
+        <div class="item">
+          <img class="left_nav_logo" src="T-Series-logo.png" />
+          <p>T-Series</p>
+        </div>
+        <div class="item">
+          <img class="left_nav_logo" src="set_india_logo.jpg" />
+          <p>SET-India</p>
+        </div>
+      </div>
 
+      <div id="container">
+        <div class="nav2" style="background-color: white">
+          <p style="color: white; background-color: black">
+            <a style="color: white" href="#All">All</a>
+          </p>
+          <p><a href="#music">Music</a></p>
+          <p><a href="#geekster">Geekster</a></p>
+          <p><a href="#News">News</a></p>
+          <p><a href="#All">Trailer</a></p>
+          <p><a href="#Nitesh_Rajput">Nitesh Rajput</a></p>
+          <p><a href="#tseries">T-series</a></p>
+          <p><a href="#music">Outer Space</a></p>
+          <p><a href="#music">CSS</a></p>
+          <p><a href="#News">Mantras</a></p>
+          <p><a href="#abhi">Abhi and niyu</a></p>
+          <p><a href="#coke">Coke Studio</a></p>
+          <p><a href="#All">Anchit Julaniya</a></p>
+          <!-- updated till -->
+        </div>
+        <div class="content">
+          <!-- All start -->
+          <span class="content1" id="All">
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=MKqJBhOgapM"
+                ><img
+                  src="hanumar_trailer.png"
+                  alt=""
+                  height="65%"
+                  width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="rdkstudio_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Hanuman Hindi Trailer | In Cinemas 12th Jan, 2024 | Prasanth
+                    Varma | Teja Sajja | RKD Studios
+                  </p>
+                  <p class="extra">RKD studio</p>
+                  <p class="extra">10.97M views 4 days</p>
+                </div>
+              </div>
             </div>
-        
-        <div id="container">
-            <div class="nav2" style="background-color: white;" >
-                <p style="color: white; background-color: black;"><a style="color: white;" href="#All">All</a></p>
-                <p><a href="#music">Music</a></p>
-                <p><a href="#geekster">Geekster</a></p>
-                <p><a href="#News">News</a></p>
-                <p><a href="#All">Trailer</a></p>
-                <p><a href="#Nitesh_Rajput">Nitesh Rajput</a></p>
-                <p><a href="#tseries">T-series</a></p>
-                <p><a href="#music">Outer Space</a></p>
-                <p><a href="#music">CSS</a></p>
-                <p><a href="#News">Mantras</a></p>
-                <p><a href="#abhi">Abhi and niyu</a></p>
-                <p><a href="#coke">Coke Studio</a></p>
-                <p><a href="#All">Anchit Julaniya</a></p>
-                <!-- updated till -->
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=LrdrcP2oiyU"
+                ><img src="poster1.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="logo1.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Dr. APJ Abdul Kalam Biography in Hindi By Gulzar Saab
+                    Motivational Story
+                  </p>
+                  <p class="extra">BigWigo</p>
+                  <p class="extra">9.5M views 8 years ago</p>
+                </div>
+              </div>
             </div>
-            <div class="content">
-                <!-- All start -->
-            <span class="content1" id="All"> 
-                <div class="box">
-                    <a href="https://www.youtube.com/watch?v=MKqJBhOgapM"><img src="hanumar_trailer.png" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div class="logo1">
-                            <img src="rdkstudio_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming">
-                            <p class="name">Hanuman Hindi Trailer | In Cinemas 12th Jan, 2024 | Prasanth Varma | Teja Sajja | RKD Studios</p>
-                            <p class="extra">RKD studio</p>
-                            <p class="extra">10.97M views 4 days</p>
-                        </div>
-                    </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=QDatPGL2s2w"
+                ><img src="poster2.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="geekster_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
                 </div>
-                <div class="box">
-                    <a href="https://www.youtube.com/watch?v=LrdrcP2oiyU"><img src="poster1.webp" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div class="logo1">
-                            <img src="logo1.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming">
-                            <p class="name">Dr. APJ Abdul Kalam Biography in Hindi By Gulzar Saab Motivational Story</p>
-                            <p class="extra">BigWigo</p>
-                            <p class="extra">9.5M views 8 years ago</p>
-                        </div>
-                    </div>
+                <div class="naming">
+                  <p class="name">
+                    Is Java not a pure OOP language? | Java interview series
+                  </p>
+                  <p class="extra">Geekster</p>
+                  <p class="extra">40 views 15 hours ago</p>
                 </div>
-                <div class="box">
-                    <a href="https://www.youtube.com/watch?v=QDatPGL2s2w"><img src="poster2.webp" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div class="logo1">
-                            <img src="geekster_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming">
-                            <p class="name">Is Java not a pure OOP language? | Java interview series</p>
-                            <p class="extra">Geekster</p>
-                            <p class="extra">40 views 15 hours ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                <a href="https://www.youtube.com/watch?v=H7JqAM8_Qeo"><img src="poster3.webp" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div class="logo1">
-                            <img src="logo1.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming">
-                            <p class="name">The Accidental Prime Minister | Full Movie | Anupam Kher, Akshaye Khanna, Aahana</p>
-                            <p class="extra">BigWigo</p>
-                            <p class="extra">10M views 8 months ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <a href="https://www.youtube.com/watch?v=H335Vdkmdhk&t=1s"> <img src="poster4.webp" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div class="logo1">
-                            <img src="geekster_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming">
-                            <p class="name">From Mechanical Engineer to Tech Success | Inspiring Journey of Geekster Alumni |Multiple</p>
-                            <p class="extra">Geekster</p>
-                            <p class="extra">367 views 3 weeks ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">   
-                    <a href="https://www.youtube.com/watch?v=BdINocFutx8"><img src="poster5.webp" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div class="logo1">
-                            <img src="setIndia_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming">
-                            <p class="name">शादी पर Tamannaah ने ले ली Kapil की 'Class' | The Kapil Sharma Show Season 2 | Full</p>
-                            <p class="extra">SET India</p>
-                            <p class="extra">1.3M views 9 days ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <a href=""><img src="poster6.jpg" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div class="logo1">
-                            <img src="do_some_coding_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming">
-                            <p class="name">HTML CSS 10 Practice Projects for Beginners in Hindi | 2022 | Playlist</p>
-                            <p class="extra">Do Some Coding</p>
-                            <p class="extra">
-                                206,079 views  Feb 8, 2022</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <a href="https://www.youtube.com/watch?v=bXKdu89fpbg"><img src="poster7.webp" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div class="logo1">
-                            <img src="geekster_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming">
-                            <p class="name">Dating App Algorithms: A Dive into Data Science & Machine Learning</p>
-                            <p class="extra">Geekster</p>
-                            <p class="extra">81K views 2 weeks ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box" id="Nitesh_Rajput">
-                    <a href="https://www.youtube.com/watch?v=XmGO4O2vpJw"><img src="poster8.webp" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div clas
-                        s="logo1">
-                            <img src="logo8.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming" >
-                            <p class="name">How East India Company Captured India | Nitish Rajput | Hindi</p>
-                            <p class="extra">Nitish Rajput</p>
-                            <p class="extra">468k views 6 hours ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box" id="tseries">
-                    <a href="https://www.youtube.com/watch?v=mUK3DJtAiTE"><img src="poster9.webp" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div class="logo1">
-                            <img src="logo9.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming">
-                            <p class="name">"Zindagi Do Pal Ki" Tribute to KK (Audio) Jukebox | Best Songs Of KK</p>
-                            <p class="extra">T-Series Bollywood Classics</p>
-                            <p class="extra">3M views 1 years ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <a href="https://www.youtube.com/watch?v=uighd8fo8W4"> <img src="poster10.webp" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div class="logo1">
-                            <img src="logo10.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming">
-                            <p class="name">Chandrayaan-3 Reveals Latest Images of MOON | Latest Update of Chandrayaan 3</p>
-                            <p class="extra"> GetsetflySCIENCE</p>
-                            <p class="extra">324K views 6 hours ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <a href="https://www.youtube.com/watch?v=WOdnRhWeHoY"><img src="poster11.webp" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div class="logo1">
-                            <img src="logo11.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming">
-                            <p class="name">DAKU | INDERPAL MOGA | CHANI NATTAN | NEW PUNJABI SONG | LATEST PUNJABI SONG 2022 |Daku Ik number da</p>
-                            <p class="extra"> Chani Nattan</p>
-                            <p class="extra">207M views 2 years ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <a href="https://www.youtube.com/watch?v=NHgUasvHwd0&t=34s"><img src="poster12.webp" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div class="logo1">
-                            <img src="logo12.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming">
-                            <p class="name">Naruto Vs Orochimaru Dublado | O Poder de Kurama se Liberta</p>
-                            <p class="extra">Zeek ANIMES</p>
-                            <p class="extra">12M views 2 years ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box" id="abhi">
-                    <a href="https://www.youtube.com/watch?v=4Rx7CEqZAFw"><img src="poster13.webp" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div class="logo1">
-                            <img src="logo13.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming">
-                            <p class="name">Why UPI can make India a financial superpower? UPI international explained by Abhi and Niyu</p>
-                            <p class="extra">Abhi and Niyu</p>
-                            <p class="extra">1.4M views 4 weeks ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <a href="https://www.youtube.com/watch?v=uOagZylKgIY"> <img src="poster14.webp" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div class="logo1">
-                            <img src="geekster_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming">
-                            <p class="name">Building a Powerful LinkedIn Profile: A Step-by-Step Guide to Success</p>
-                            <p class="extra">Geekster</p>
-                            <p class="extra">254 views 1 month ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <a href="https://www.youtube.com/watch?v=WjOtRkh8UBg"><img src="poster15.webp" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div class="logo1">
-                            <img src="geekster_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming">
-                            <p class="name">From Fresher to 5 offer Letters | Inspiring Journey to a Developer | Coding Dreams</p>
-                            <p class="extra">Geekster</p>
-                            <p class="extra">1200 views 2.5 month ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <a href="https://www.youtube.com/watch?v=v7vTEkhL5ro"><img src="poster16.webp" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div class="logo1">
-                            <img src="geekster_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming">
-                            <p class="name">Best Way to Say 'I Don't Know' in Interviews | Job preparation</p>
-                            <p class="extra">Geekster</p>
-                            <p class="extra">1.3M views 1 year ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <a href="https://www.youtube.com/watch?v=wtvuB8US2aU"> <img src="poster17.webp" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div class="logo1">
-                            <img src="ranveer_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming">
-                            <p class="name">Ami Ganatra - Krishna, Ram Aur Sita Ki Ankahee Kahaniyaan | The Ranveer Show हिंदी 108</p>
-                            <p class="extra">Ranveer Allahbadia</p>
-                            <p class="extra">5.97M views 11 months ago</p>
-                        </div>
-                    </div>
-                </div>
-            </span>    
-                <!-- All end -->
-                <!-- music Start -->
-                <span class="music content1" id="music">
-                    <div class="box" id="coke">
-                        <a href="https://www.youtube.com/watch?v=t7wSjy9Lv-o" ><img src = "music1.png" alt="" height="65%" width="100%"></a>
-                        <div class="video_name">
-                            <div class="logo1">
-                                <img src="coke_studio_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                            </div>
-                            <div class="naming">
-                                <p class="name">Coke Studio Bharat | Khalasi | Aditya Gadhvi x Achint</p>
-                                <p class="extra">Coke Studio India</p>
-                                <p class="extra">5.86 views 3 months ago</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <a href="https://www.youtube.com/watch?v=8sLS2knUa6Y"> <img src="music5.png" alt="" height="65%" width="100%"></a>
-                        <div class="video_name">
-                            <div class="logo1">
-                                <img src="saregama_music_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                            </div>
-                            <div class="naming">
-                                <p class="name">Phir Aur Kya Chahiye| Zara Hatke Zara Bachke| Vicky K, Sara Ali K, Arijit Singh,Sachin-Jigar,Amitabh</p>
-                                <p class="extra">Saregama Music</p>
-                                <p class="extra">228M views  7 months ago</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <a href="https://www.youtube.com/watch?v=22bLNq6iCjU"> <img src="music3.png" alt="" height="65%" width="100%"></a>
-                        <div class="video_name">
-                            <div class="logo1">
-                                <img src="hansraj_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                            </div>
-                            <div class="naming">
-                                <p class="name">Jai Shree Ram | Hansraj Raghuwanshi | Ayodhya Ram Mandir Song 2024 | Yug Ram Raj Ka
-                                </p>
-                                <p class="extra">Hansraj Raghuwanshi</p>
-                                <p class="extra">11.7M views 1 months ago</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <a href="https://www.youtube.com/watch?v=t6LmgZ25Fgo"> <img src="music4.png" alt="" height="65%" width="100%"></a>
-                        <div class="video_name">
-                            <div class="logo1">
-                                <img src="rama_sharan_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                            </div>
-                            <div class="naming">
-                                <p class="name">रामा रामा रटते रटते बीती रे उमरिया | Rama Rama Ratte Ratte | Slowed + reverb ( Lofi )</p>
-                                <p class="extra">Rama Sharan</p>
-                                <p class="extra">411k views 11 months ago</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <a href="https://www.youtube.com/watch?v=wv7XUzlVi3Y"> <img src="music2.png" alt="" height="65%" width="100%"></a>
-                        <div class="video_name">
-                            <div class="logo1">
-                                <img src="T-Series-logo.png" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                            </div>
-                            <div class="naming">
-                                <p class="name">ANIMAL: ABRAR’S ENTRY - JAMAL KUDU | BOBBY DEOL | SANDEEP VANGA | BHUSHAN KUMAR</p>
-                                <p class="extra">T-series</p>
-                                <p class="extra">5.97M views 11 months ago</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <a href="https://www.youtube.com/watch?v=RLzC55ai0eo"> <img src="music6.png" alt="" height="65%" width="100%"></a>
-                        <div class="video_name">
-                            <div class="logo1">
-                                <img src="jasleen_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                            </div>
-                            <div class="naming">
-                                <p class="name">Heeriye (Official Video) Jasleen Royal ft Arijit Singh| Dulquer Salmaan| Aditya Sharma |Taani Tanvir</p>
-                                <p class="extra">Jasleen Royal</p>
-                                <p class="extra">1.01M views 8 months ago</p>
-                            </div>
-                        </div>
-                    </div>   
-                </span>
-                <!-- music End -->
-                
-                <!-- geekster Start -->
-                <span class="content1" id="geekster">
-                    <div class="box">
-                        <a href="https://www.youtube.com/watch?v=QDatPGL2s2w"><img src="poster2.webp" alt="" height="65%" width="100%"></a>
-                        <div class="video_name">
-                            <div class="logo1">
-                                <img src="geekster_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                            </div>
-                            <div class="naming">
-                                <p class="name">Is Java not a pure OOP language? | Java interview series</p>
-                                <p class="extra">Geekster</p>
-                                <p class="extra">40 views 15 hours ago</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <a href="https://www.youtube.com/watch?v=H335Vdkmdhk&t=1s"> <img src="poster4.webp" alt="" height="65%" width="100%"></a>
-                        <div class="video_name">
-                            <div class="logo1">
-                                <img src="geekster_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                            </div>
-                            <div class="naming">
-                                <p class="name">From Mechanical Engineer to Tech Success | Inspiring Journey of Geekster Alumni |Multiple</p>
-                                <p class="extra">Geekster</p>
-                                <p class="extra">367 views 3 weeks ago</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <a href="https://www.youtube.com/watch?v=bXKdu89fpbg"><img src="poster7.webp" alt="" height="65%" width="100%"></a>
-                        <div class="video_name">
-                            <div class="logo1">
-                                <img src="geekster_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                            </div>
-                            <div class="naming">
-                                <p class="name">Dating App Algorithms: A Dive into Data Science & Machine Learning</p>
-                                <p class="extra">Geekster</p>
-                                <p class="extra">81K views 2 weeks ago</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <a href="https://www.youtube.com/watch?v=uOagZylKgIY"> <img src="poster14.webp" alt="" height="65%" width="100%"></a>
-                        <div class="video_name">
-                            <div class="logo1">
-                                <img src="geekster_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                            </div>
-                            <div class="naming">
-                                <p class="name">Building a Powerful LinkedIn Profile: A Step-by-Step Guide to Success</p>
-                                <p class="extra">Geekster</p>
-                                <p class="extra">254 views 1 month ago</p>
-                            </div>
-                        </div>
-                    </div>
-                   
-                <div class="box">
-                    <a href="https://www.youtube.com/watch?v=v7vTEkhL5ro"><img src="poster16.webp" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div class="logo1">
-                            <img src="geekster_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming">
-                            <p class="name">Best Way to Say 'I Don't Know' in Interviews | Job preparation</p>
-                            <p class="extra">Geekster</p>
-                            <p class="extra">1.3M views 1 year ago</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="box">
-                    <a href="https://www.youtube.com/watch?v=uOagZylKgIY"> <img src="poster14.webp" alt="" height="65%" width="100%"></a>
-                    <div class="video_name">
-                        <div class="logo1">
-                            <img src="geekster_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                        </div>
-                        <div class="naming">
-                            <p class="name">Building a Powerful LinkedIn Profile: A Step-by-Step Guide to Success</p>
-                            <p class="extra">Geekster</p>
-                            <p class="extra">254 views 1 month ago</p>
-                        </div>
-                    </div>
-                </div>
-                </span>
-                <!-- geekster End -->
-            
-                <!-- NEWS - START -->
-                <span class="content1" id="News">
-                    <div class="box">
-                        <a href="https://www.youtube.com/watch?v=Xmm3Kr5P1Uw"><img src="news1.png" alt="" height="65%" width="100%"></a>
-                        <div class="video_name">
-                            <div class="logo1">
-                                <img src="indiatv_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                            </div>
-                            <div class="naming">
-                                <p class="name">India TV Live: PM Modi South Visit | Ram Mandir Pran Pratistha | Rahul Gandhi Bharat Nyay Yatra |</p>
-                                <p class="extra">India Tv</p>
-                                <p class="extra">400k watching Live</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <a href="https://www.youtube.com/watch?v=u7s6m2Qq_c4"> <img src="news2.png" alt="" height="65%" width="100%"></a>
-                        <div class="video_name">
-                            <div class="logo1">
-                                <img src="zeenews_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                            </div>
-                            <div class="naming">
-                                <p class="name">S Jaishankar On Maldives LIVE Update : जयशंकर ने निकाली मालदीव की हवा!| Breaking | Trending</p>
-                                <p class="extra">Zee News</p>
-                                <p class="extra">367 watching Live</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <a href="https://www.youtube.com/watch?v=TPcmrPrygDc"><img src="news3.png" alt="" height="65%" width="100%"></a>
-                        <div class="video_name">
-                            <div class="logo1">
-                                <img src="zeenews_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                            </div>
-                            <div class="naming">
-                                <p class="name">Zee News LIVE: Ayodhya Ram Mandir Pran Pratishtha | India Boycott Maldives Updates | Breaking News</p>
-                                <p class="extra">Zee News</p>
-                                <p class="extra">8K watching Live</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <a href="https://www.youtube.com/watch?v=GOApHbTjv8o"> <img src="news4.png" alt="" height="65%" width="100%"></a>
-                        <div class="video_name">
-                            <div class="logo1">
-                                <img src="zeenews_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                            </div>
-                            <div class="naming">
-                                <p class="name">PM Modi Reply To Rahul Gandhi LIVE : राम मंदिर पर मोदी ने राहुल 'उधेड़' डाला!| Ram Mandir | Breaking</p>
-                                <p class="extra">Zee News</p>
-                                <p class="extra">25k Watching Live</p>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="box">
-                        <a href="https://www.youtube.com/watch?v=v7vTEkhL5ro"><img src="news5.png" alt="" height="65%" width="100%"></a>
-                        <div class="video_name">
-                            <div class="logo1">
-                                <img src="aajtav_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                            </div>
-                            <div class="naming">
-                                <p class="name">Aaj Tak LIVE TV: Ram Mandir Pran Pratishtha | PM Modi | Rahul Gandhi on Ram Mandir | Sunderkand Path</p>
-                                <p class="extra">Aaj Tak</p>
-                                <p class="extra">2M watching Live</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <a href="https://www.youtube.com/watch?v=4moYsKdNEXY"> <img src="news6.png" alt="" height="65%" width="100%"></a>
-                        <div class="video_name">
-                            <div class="logo1">
-                                <img src="msnbc_logo.jpg" alt="" style="height:35px ; width:35px;border-radius: 50%;">
-                            </div>
-                            <div class="naming">
-                                <p class="name">Trump wins Iowa in landslide, but there’s bad news for him</p>
-                                <p class="extra">MSNBC</p>
-                                <p class="extra">254 views 1 month ago</p>
-                            </div>
-                        </div>
-                    </div>
-                </span>
-                <!-- NEWS END -->
-
-                <!--  -->
+              </div>
             </div>
-        </div> 
-        
-    </div>  
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=H7JqAM8_Qeo"
+                ><img src="poster3.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="logo1.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    The Accidental Prime Minister | Full Movie | Anupam Kher,
+                    Akshaye Khanna, Aahana
+                  </p>
+                  <p class="extra">BigWigo</p>
+                  <p class="extra">10M views 8 months ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=H335Vdkmdhk&t=1s">
+                <img src="poster4.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="geekster_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    From Mechanical Engineer to Tech Success | Inspiring Journey
+                    of Geekster Alumni |Multiple
+                  </p>
+                  <p class="extra">Geekster</p>
+                  <p class="extra">367 views 3 weeks ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=BdINocFutx8"
+                ><img src="poster5.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="setIndia_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    शादी पर Tamannaah ने ले ली Kapil की 'Class' | The Kapil
+                    Sharma Show Season 2 | Full
+                  </p>
+                  <p class="extra">SET India</p>
+                  <p class="extra">1.3M views 9 days ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href=""
+                ><img src="poster6.jpg" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="do_some_coding_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    HTML CSS 10 Practice Projects for Beginners in Hindi | 2022
+                    | Playlist
+                  </p>
+                  <p class="extra">Do Some Coding</p>
+                  <p class="extra">206,079 views Feb 8, 2022</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=bXKdu89fpbg"
+                ><img src="poster7.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="geekster_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Dating App Algorithms: A Dive into Data Science & Machine
+                    Learning
+                  </p>
+                  <p class="extra">Geekster</p>
+                  <p class="extra">81K views 2 weeks ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box" id="Nitesh_Rajput">
+              <a href="https://www.youtube.com/watch?v=XmGO4O2vpJw"
+                ><img src="poster8.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div clas s="logo1">
+                  <img
+                    src="logo8.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    How East India Company Captured India | Nitish Rajput |
+                    Hindi
+                  </p>
+                  <p class="extra">Nitish Rajput</p>
+                  <p class="extra">468k views 6 hours ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box" id="tseries">
+              <a href="https://www.youtube.com/watch?v=mUK3DJtAiTE"
+                ><img src="poster9.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="logo9.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    "Zindagi Do Pal Ki" Tribute to KK (Audio) Jukebox | Best
+                    Songs Of KK
+                  </p>
+                  <p class="extra">T-Series Bollywood Classics</p>
+                  <p class="extra">3M views 1 years ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=uighd8fo8W4">
+                <img src="poster10.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="logo10.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Chandrayaan-3 Reveals Latest Images of MOON | Latest Update
+                    of Chandrayaan 3
+                  </p>
+                  <p class="extra">GetsetflySCIENCE</p>
+                  <p class="extra">324K views 6 hours ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=WOdnRhWeHoY"
+                ><img src="poster11.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="logo11.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    DAKU | INDERPAL MOGA | CHANI NATTAN | NEW PUNJABI SONG |
+                    LATEST PUNJABI SONG 2022 |Daku Ik number da
+                  </p>
+                  <p class="extra">Chani Nattan</p>
+                  <p class="extra">207M views 2 years ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=NHgUasvHwd0&t=34s"
+                ><img src="poster12.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="logo12.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Naruto Vs Orochimaru Dublado | O Poder de Kurama se Liberta
+                  </p>
+                  <p class="extra">Zeek ANIMES</p>
+                  <p class="extra">12M views 2 years ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box" id="abhi">
+              <a href="https://www.youtube.com/watch?v=4Rx7CEqZAFw"
+                ><img src="poster13.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="logo13.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Why UPI can make India a financial superpower? UPI
+                    international explained by Abhi and Niyu
+                  </p>
+                  <p class="extra">Abhi and Niyu</p>
+                  <p class="extra">1.4M views 4 weeks ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=uOagZylKgIY">
+                <img src="poster14.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="geekster_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Building a Powerful LinkedIn Profile: A Step-by-Step Guide
+                    to Success
+                  </p>
+                  <p class="extra">Geekster</p>
+                  <p class="extra">254 views 1 month ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=WjOtRkh8UBg"
+                ><img src="poster15.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="geekster_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    From Fresher to 5 offer Letters | Inspiring Journey to a
+                    Developer | Coding Dreams
+                  </p>
+                  <p class="extra">Geekster</p>
+                  <p class="extra">1200 views 2.5 month ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=v7vTEkhL5ro"
+                ><img src="poster16.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="geekster_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Best Way to Say 'I Don't Know' in Interviews | Job
+                    preparation
+                  </p>
+                  <p class="extra">Geekster</p>
+                  <p class="extra">1.3M views 1 year ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=wtvuB8US2aU">
+                <img src="poster17.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="ranveer_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Ami Ganatra - Krishna, Ram Aur Sita Ki Ankahee Kahaniyaan |
+                    The Ranveer Show हिंदी 108
+                  </p>
+                  <p class="extra">Ranveer Allahbadia</p>
+                  <p class="extra">5.97M views 11 months ago</p>
+                </div>
+              </div>
+            </div>
+          </span>
+          <!-- All end -->
+          <!-- music Start -->
+          <span class="music content1" id="music">
+            <div class="box" id="coke">
+              <a href="https://www.youtube.com/watch?v=t7wSjy9Lv-o"
+                ><img src="music1.png" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="coke_studio_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Coke Studio Bharat | Khalasi | Aditya Gadhvi x Achint
+                  </p>
+                  <p class="extra">Coke Studio India</p>
+                  <p class="extra">5.86 views 3 months ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=8sLS2knUa6Y">
+                <img src="music5.png" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="saregama_music_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Phir Aur Kya Chahiye| Zara Hatke Zara Bachke| Vicky K, Sara
+                    Ali K, Arijit Singh,Sachin-Jigar,Amitabh
+                  </p>
+                  <p class="extra">Saregama Music</p>
+                  <p class="extra">228M views 7 months ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=22bLNq6iCjU">
+                <img src="music3.png" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="hansraj_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Jai Shree Ram | Hansraj Raghuwanshi | Ayodhya Ram Mandir
+                    Song 2024 | Yug Ram Raj Ka
+                  </p>
+                  <p class="extra">Hansraj Raghuwanshi</p>
+                  <p class="extra">11.7M views 1 months ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=t6LmgZ25Fgo">
+                <img src="music4.png" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="rama_sharan_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    रामा रामा रटते रटते बीती रे उमरिया | Rama Rama Ratte Ratte |
+                    Slowed + reverb ( Lofi )
+                  </p>
+                  <p class="extra">Rama Sharan</p>
+                  <p class="extra">411k views 11 months ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=wv7XUzlVi3Y">
+                <img src="music2.png" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="T-Series-logo.png"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    ANIMAL: ABRAR’S ENTRY - JAMAL KUDU | BOBBY DEOL | SANDEEP
+                    VANGA | BHUSHAN KUMAR
+                  </p>
+                  <p class="extra">T-series</p>
+                  <p class="extra">5.97M views 11 months ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=RLzC55ai0eo">
+                <img src="music6.png" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="jasleen_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Heeriye (Official Video) Jasleen Royal ft Arijit Singh|
+                    Dulquer Salmaan| Aditya Sharma |Taani Tanvir
+                  </p>
+                  <p class="extra">Jasleen Royal</p>
+                  <p class="extra">1.01M views 8 months ago</p>
+                </div>
+              </div>
+            </div>
+          </span>
+          <!-- music End -->
 
-</body>
+          <!-- geekster Start -->
+          <span class="content1" id="geekster">
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=QDatPGL2s2w"
+                ><img src="poster2.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="geekster_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Is Java not a pure OOP language? | Java interview series
+                  </p>
+                  <p class="extra">Geekster</p>
+                  <p class="extra">40 views 15 hours ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=H335Vdkmdhk&t=1s">
+                <img src="poster4.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="geekster_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    From Mechanical Engineer to Tech Success | Inspiring Journey
+                    of Geekster Alumni |Multiple
+                  </p>
+                  <p class="extra">Geekster</p>
+                  <p class="extra">367 views 3 weeks ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=bXKdu89fpbg"
+                ><img src="poster7.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="geekster_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Dating App Algorithms: A Dive into Data Science & Machine
+                    Learning
+                  </p>
+                  <p class="extra">Geekster</p>
+                  <p class="extra">81K views 2 weeks ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=uOagZylKgIY">
+                <img src="poster14.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="geekster_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Building a Powerful LinkedIn Profile: A Step-by-Step Guide
+                    to Success
+                  </p>
+                  <p class="extra">Geekster</p>
+                  <p class="extra">254 views 1 month ago</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=v7vTEkhL5ro"
+                ><img src="poster16.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="geekster_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Best Way to Say 'I Don't Know' in Interviews | Job
+                    preparation
+                  </p>
+                  <p class="extra">Geekster</p>
+                  <p class="extra">1.3M views 1 year ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=uOagZylKgIY">
+                <img src="poster14.webp" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="geekster_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Building a Powerful LinkedIn Profile: A Step-by-Step Guide
+                    to Success
+                  </p>
+                  <p class="extra">Geekster</p>
+                  <p class="extra">254 views 1 month ago</p>
+                </div>
+              </div>
+            </div>
+          </span>
+          <!-- geekster End -->
+
+          <!-- NEWS - START -->
+          <span class="content1" id="News">
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=Xmm3Kr5P1Uw"
+                ><img src="news1.png" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="indiatv_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    India TV Live: PM Modi South Visit | Ram Mandir Pran
+                    Pratistha | Rahul Gandhi Bharat Nyay Yatra |
+                  </p>
+                  <p class="extra">India Tv</p>
+                  <p class="extra">400k watching Live</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=u7s6m2Qq_c4">
+                <img src="news2.png" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="zeenews_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    S Jaishankar On Maldives LIVE Update : जयशंकर ने निकाली
+                    मालदीव की हवा!| Breaking | Trending
+                  </p>
+                  <p class="extra">Zee News</p>
+                  <p class="extra">367 watching Live</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=TPcmrPrygDc"
+                ><img src="news3.png" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="zeenews_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Zee News LIVE: Ayodhya Ram Mandir Pran Pratishtha | India
+                    Boycott Maldives Updates | Breaking News
+                  </p>
+                  <p class="extra">Zee News</p>
+                  <p class="extra">8K watching Live</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=GOApHbTjv8o">
+                <img src="news4.png" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="zeenews_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    PM Modi Reply To Rahul Gandhi LIVE : राम मंदिर पर मोदी ने
+                    राहुल 'उधेड़' डाला!| Ram Mandir | Breaking
+                  </p>
+                  <p class="extra">Zee News</p>
+                  <p class="extra">25k Watching Live</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=v7vTEkhL5ro"
+                ><img src="news5.png" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="aajtav_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Aaj Tak LIVE TV: Ram Mandir Pran Pratishtha | PM Modi |
+                    Rahul Gandhi on Ram Mandir | Sunderkand Path
+                  </p>
+                  <p class="extra">Aaj Tak</p>
+                  <p class="extra">2M watching Live</p>
+                </div>
+              </div>
+            </div>
+            <div class="box">
+              <a href="https://www.youtube.com/watch?v=4moYsKdNEXY">
+                <img src="news6.png" alt="" height="65%" width="100%"
+              /></a>
+              <div class="video_name">
+                <div class="logo1">
+                  <img
+                    src="msnbc_logo.jpg"
+                    alt=""
+                    style="height: 35px; width: 35px; border-radius: 50%"
+                  />
+                </div>
+                <div class="naming">
+                  <p class="name">
+                    Trump wins Iowa in landslide, but there’s bad news for him
+                  </p>
+                  <p class="extra">MSNBC</p>
+                  <p class="extra">254 views 1 month ago</p>
+                </div>
+              </div>
+            </div>
+          </span>
+          <!-- NEWS END -->
+
+          <!--  -->
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
